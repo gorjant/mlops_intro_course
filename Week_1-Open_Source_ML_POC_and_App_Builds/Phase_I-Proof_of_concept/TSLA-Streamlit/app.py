@@ -195,7 +195,7 @@ for i in range(1, len(dfSentiment)-1):
             fig.layout.xaxis.title='Timestamp'
 
             # write the figure throught streamlit
-            st.plotly_chart(fig, use_container_width=True)
+            st.plotly_chart(fig) #, use_container_width=True)
 
         st.markdown('### Detailed Data View')
         st.dataframe(dfSentiment.iloc[:, 1:][0:i])
